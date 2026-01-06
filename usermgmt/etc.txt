@@ -1,0 +1,43 @@
+Database Requirements:
+-database: db_bit7tha1
+- Tables / Entities:
+    -tbl_users
+    -Fields/Attributes/Columns
+        -id : int
+        -fullname : VARCHAR(30)
+        -username : VARCHAR(30)
+        -email : VARCHAR(100)
+        -address : VARCHAR(250)
+        -phone : VARCHAR(20)
+        -photo : VARCHAR(50) 
+        - +3
+
+        +3 : 
+            - created_at : TIMESTAMP
+            - updated_at : TIMESTAMP
+            -status : BOOLEAN
+
+        +5 :
+           - created_by:INT
+           - created_at:TIMESTAMP
+           - updated_by:INT
+           - updated_at:TIMESTAMP
+           - status: BOOLEAN
+
+
+           -----Apply:
+            CREATE TABLE tbl_users(
+            id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+            fullname VARCHAR(30) NOT NULL,
+            email VARCHAR(100) UNIQUE NOT NULL,
+            address VARCHAR(250) NULL, 
+            phone VARCHAR(20) NULL,
+            photo VARCHAR(50) NULL,
+            created_at  TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,
+            updated_at  TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,
+            status BOOLEAN NOT NULL
+           ):
+
+           ALTER TABLE tbl_users ADD COLUMN password VARCHAR(250) NOT NULL AFTER email;
+
+           cart table, product table, customer with foreign_key
