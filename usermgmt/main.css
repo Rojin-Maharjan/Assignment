@@ -47,10 +47,34 @@
     cursor: pointer;
     transition:background-color 0.3s ease;
 }
+.google{
+    display:inline-block;
+    padding:10px 20px;
+    font-size:36px;
+    width: 100%;
+    color:#7B3F00;
+    background-color: transparent;
+    border: 2px solid #7B3F00;
+    border-radius: 20px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition:background-color 0.3s ease;
+}
+.google:hover{
+    background-color:#7B3F00;
+    color:#fff;
+}
 .text-link{
     color:#007BFF;
     text-decoration: none;
     transition:color 0.3s ease;
+}
+.or{
+    font-weight: lighter;
+    text-align: center;
+    margin: 20px 0;
+    font-size: 36px;
 }
 .btn, text-link{
 transition:transform 0.2s ease;

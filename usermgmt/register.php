@@ -41,6 +41,9 @@
             </div>
 
             <button type="submit" name="submit" class="btn">Signup</button>
+            <h2 class="or">OR</h2>
+            <button type="submit" name="submit" class="google">Contiue with Gmail</button>
+
         </form>
 
         <div class="btn-group">
